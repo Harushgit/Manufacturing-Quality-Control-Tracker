@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manufacturing Dashboards</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; }
+        .nav { background: #333; padding: 10px; }
+        .nav a { color: white; padding: 10px 20px; text-decoration: none; display: inline-block; }
+        .nav a:hover { background: #575757; }
+        .dashboard { display: none; padding: 20px; }
+    </style>
+    <script>
+        function showDashboard(id) {
+            var dashboards = document.getElementsByClassName('dashboard');
+            for (var i = 0; i < dashboards.length; i++) {
+                dashboards[i].style.display = 'none';
+            }
+            document.getElementById(id).style.display = 'block';
+        }
+    </script>
+</head>
+<body>
+    <div class="nav">
+        <a href="#" onclick="showDashboard('home')">Home</a>
+        <a href="#" onclick="showDashboard('quality')">Quality Assurance</a>
+        <a href="#" onclick="showDashboard('production')">Production Manager</a>
+        <a href="#" onclick="showDashboard('data_analyst')">Data Analyst</a>
+        <a href="#" onclick="showDashboard('compliance')">Compliance Tracking</a>
+    </div>
+    
+    <div id="home" class="dashboard" style="display:block;">
+        <h2>Home</h2>
+        <div class='tableauPlaceholder' id='viz1739983175851' style='position: relative'><noscript><a href='#'><img alt='HOME' src='https://public.tableau.com/static/images/Re/Realtimemonitoring/HOME/1_rss.png' style='border: none' /></a></noscript><object class='tableauViz' style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /><param name='embed_code_version' value='3' /><param name='site_root' value='' /><param name='name' value='Realtimemonitoring/HOME' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /></object></div>
+    </div>
+    
+    <div id="quality" class="dashboard">
+        <h2>Quality Assurance</h2>
+        <div class='tableauPlaceholder' id='viz1739984104068' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Re&#47;Realtimemonitoring&#47;QualityAssuranceTeamDashboard&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='Realtimemonitoring&#47;QualityAssuranceTeamDashboard' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Re&#47;Realtimemonitoring&#47;QualityAssuranceTeamDashboard&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /></object></div>                
+        <script type='text/javascript'>                    
+            var divElement = document.getElementById('viz1739984104068');                    
+            var vizElement = divElement.getElementsByTagName('object')[0];                    
+            if ( divElement.offsetWidth > 800 ) { 
+                vizElement.style.width='100%';
+                vizElement.style.height=(divElement.offsetWidth*0.75)+'px';
+            } else if ( divElement.offsetWidth > 500 ) { 
+                vizElement.style.width='100%';
+                vizElement.style.height=(divElement.offsetWidth*0.75)+'px';
+            } else { 
+                vizElement.style.width='100%';
+                vizElement.style.height='3777px';
+            }                     
+            var scriptElement = document.createElement('script');                    
+            scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    
+            vizElement.parentNode.insertBefore(scriptElement, vizElement);                
+        </script>
+    </div>
+    
+    <div id="production" class="dashboard">
+        <h2>Production Manager</h2>
+        <div class='tableauPlaceholder' id='viz1739984173931' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Re&#47;Realtimemonitoring&#47;ProductionManagersTeamDashboard2&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='Realtimemonitoring&#47;ProductionManagersTeamDashboard2' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Re&#47;Realtimemonitoring&#47;ProductionManagersTeamDashboard2&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /></object></div>                
+        <script type='text/javascript'>                    
+            var divElement = document.getElementById('viz1739984173931');                    
+            var vizElement = divElement.getElementsByTagName('object')[0];                    
+            if ( divElement.offsetWidth > 800 ) { 
+                vizElement.style.width='100%';
+                vizElement.style.height=(divElement.offsetWidth*0.75)+'px';
+            } else if ( divElement.offsetWidth > 500 ) { 
+                vizElement.style.width='100%';
+                vizElement.style.height=(divElement.offsetWidth*0.75)+'px';
+            } else { 
+                vizElement.style.width='100%';
+                vizElement.style.height='2827px';
+            }                     
+            var scriptElement = document.createElement('script');                    
+            scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    
+            vizElement.parentNode.insertBefore(scriptElement, vizElement);                
+        </script>
+    </div>
+    
+    <div id="data_analyst" class="dashboard">
+        <h2>Data Analyst</h2>
+        <div class='tableauPlaceholder' id='viz1739984221102' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Re&#47;Realtimemonitoring&#47;DataAnalystTeamDashboard3&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='Realtimemonitoring&#47;DataAnalystTeamDashboard3' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Re&#47;Realtimemonitoring&#47;DataAnalystTeamDashboard3&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /></object></div>                
+        <script type='text/javascript'>                    
+            var divElement = document.getElementById('viz1739984221102');                    
+            var vizElement = divElement.getElementsByTagName('object')[0];                    
+            if ( divElement.offsetWidth > 800 ) { 
+                vizElement.style.width='100%';
+                vizElement.style.height=(divElement.offsetWidth*0.75)+'px';
+            } else if ( divElement.offsetWidth > 500 ) { 
+                vizElement.style.width='100%';
+                vizElement.style.height=(divElement.offsetWidth*0.75)+'px';
+            } else { 
+                vizElement.style.width='100%';
+                vizElement.style.height='2527px';
+            }                     
+            var scriptElement = document.createElement('script');                    
+            scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    
+            vizElement.parentNode.insertBefore(scriptElement, vizElement);                
+        </script>
+    </div>
+    
+    <div id="compliance" class="dashboard">
+        <h2>Compliance Tracking</h2>
+        <div class='tableauPlaceholder' id='viz1739985641068' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Re&#47;Realtimemonitoring&#47;RegulatoryComplianceTeamsDashboard4&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='Realtimemonitoring&#47;RegulatoryComplianceTeamsDashboard4' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Re&#47;Realtimemonitoring&#47;RegulatoryComplianceTeamsDashboard4&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /></object></div>                
+        <script type='text/javascript'>                    
+            var divElement = document.getElementById('viz1739985641068');                    
+            var vizElement = divElement.getElementsByTagName('object')[0];                    
+            if ( divElement.offsetWidth > 800 ) { 
+                vizElement.style.width='100%';
+                vizElement.style.height=(divElement.offsetWidth*0.75)+'px';
+            } else if ( divElement.offsetWidth > 500 ) { 
+                vizElement.style.width='100%';
+                vizElement.style.height=(divElement.offsetWidth*0.75)+'px';
+            } else { 
+                vizElement.style.width='100%';
+                vizElement.style.height='2727px';
+            }                     
+            var scriptElement = document.createElement('script');                    
+            scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    
+            vizElement.parentNode.insertBefore(scriptElement, vizElement);                
+        </script>
+    </div>
+    
+    <script>
+        var script = document.createElement('script');
+        script.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+        document.body.appendChild(script);
+    </script>
+</body>
+</html>
