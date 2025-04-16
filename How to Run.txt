@@ -1,0 +1,12 @@
+Welcome you......
+
+Before you're going to run the project explore all the files. 
+
+In the "assests" folder i put into all the ML code's HTML version and the "HOME" is the Tableau's Dashboards Embedded code which i used to integrated into the dash.
+
+In the "Main App" folder i put into the Main Dash code which is integrated with all the ML codes and HTML version of ML codes also the tableau dashboard.
+so you can run the python file ("Final deployment") directly in the "VS-Code" else "Anaconda Command Prompt".
+
+In "Tableau book & Embedded" folder i put into the "Real-time monitoring" with (.twxb) extension also the embedded code.
+
+In the YOLO model folder i additionally created an YOLO model for multi-defect detection. In that folder i put all the datasets and weights, detections, uploaded test images, etc...
